@@ -1,4 +1,4 @@
-module github.com/lestar348/xray-core-mobile-wrapper
+module github.com/YangCheng0121/xray-core-mobile-wrapper
 
 go 1.24
 
