@@ -47,22 +47,22 @@ func SetAssetsDirectory(path string) {
 }
 
 // [key] can be:
-//PluginLocation  = "xray.location.plugin"  // 插件二进制文件目录路径
-//ConfigLocation  = "xray.location.config"  // 主配置文件(config.json)路径
-//ConfdirLocation = "xray.location.confdir" // 多配置文件目录路径
-//ToolLocation    = "xray.location.tool"    // 工具程序目录路径
-//AssetLocation   = "xray.location.asset"   // 资源文件(geoip/geosite.dat)目录
-//CertLocation    = "xray.location.cert"    // 证书文件目录路径
+// PluginLocation  = "xray.location.plugin"  // 插件二进制文件目录路径
+// ConfigLocation  = "xray.location.config"  // 主配置文件(config.json)路径
+// ConfdirLocation = "xray.location.confdir" // 多配置文件目录路径
+// ToolLocation    = "xray.location.tool"    // 工具程序目录路径
+// AssetLocation   = "xray.location.asset"   // 资源文件(geoip/geosite.dat)目录
+// CertLocation    = "xray.location.cert"    // 证书文件目录路径
 //
-//UseReadV         = "xray.buf.readv"         // 是否启用readv系统调用(性能优化)
-//UseFreedomSplice = "xray.buf.splice"        // 是否启用splice零拷贝传输(Linux特有)
-//UseVmessPadding  = "xray.vmess.padding"     // 是否启用VMess协议流量填充(混淆)
-//UseCone          = "xray.cone.disabled"     // 是否禁用Cone NAT检测
+// UseReadV         = "xray.buf.readv"         // 是否启用readv系统调用(性能优化)
+// UseFreedomSplice = "xray.buf.splice"        // 是否启用splice零拷贝传输(Linux特有)
+// UseVmessPadding  = "xray.vmess.padding"     // 是否启用VMess协议流量填充(混淆)
+// UseCone          = "xray.cone.disabled"     // 是否禁用Cone NAT检测
 //
-//BufferSize           = "xray.ray.buffer.size"    // 每个连接的缓冲区大小(单位KB)
-//BrowserDialerAddress = "xray.browser.dialer"    // 浏览器API代理地址
-//XUDPLog              = "xray.xudp.show"         // 是否显示XUDP协议调试日志
-//XUDPBaseKey          = "xray.xudp.basekey"      // XUDP协议基础密钥
+// BufferSize           = "xray.ray.buffer.size"    // 每个连接的缓冲区大小(单位KB)
+// BrowserDialerAddress = "xray.browser.dialer"    // 浏览器API代理地址
+// XUDPLog              = "xray.xudp.show"         // 是否显示XUDP协议调试日志
+// XUDPBaseKey          = "xray.xudp.basekey"      // XUDP协议基础密钥
 func SetXrayEnv(key string, path string) {
 	os.Setenv(key, path)
 }
