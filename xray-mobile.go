@@ -163,3 +163,9 @@ func measureInstDelay(ctx context.Context, inst *core.Instance, url string) (int
 	return time.Since(start).Milliseconds(), nil
 
 }
+
+// GetCoreVersion /*
+func GetCoreVersion() string {
+	var version = 99
+	return fmt.Sprintf("Lib v%d, Xray-core v%s", version, core.Version())
+}
